@@ -1,0 +1,1109 @@
+.body-container{
+    margin: 0;
+  
+    height: auto;
+}   
+
+body{   
+    margin: 0;
+    font-family: Arial, sans-serif;
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        overflow-y: auto; 
+    }
+    
+    ::-webkit-scrollbar {
+        width: 4px;    
+        background-color: #A0522D;    
+    }
+    
+
+    ::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    
+
+    ::-webkit-scrollbar-thumb {
+        background: #e0af98; 
+        border-radius: 10px; 
+    } 
+    
+  
+}
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    overflow-y: auto; 
+    overflow-x: hidden;
+}
+
+.cup-image {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+.sidebar {
+    height: 100vh; 
+    width: 80px; 
+    background-color: #A0522D;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    position: fixed; 
+    top: 0;
+    left: 0; 
+    z-index: 10; 
+}
+
+.icon-circle:hover .aboutBox{
+    display: block;
+}
+
+.hover-text {
+    display: none; 
+    position: absolute; 
+    left: 200%; 
+    transform: translateX(-50%); 
+    background-color: #da987c; 
+    color: white;
+    padding: 5px;
+    border-radius: 4px; 
+    font-size: 10px; 
+    white-space: nowrap; 
+    text-transform: none;
+}
+#home .hover-text {
+    bottom: 20%;
+    left: 215%; 
+}
+#user .hover-text{
+    bottom: 28%;
+    left: 236%;
+}
+#briefcase .hover-text{
+    bottom: 25%;
+    left: 230%;
+  
+}
+#envelope .hover-text{
+    bottom: 21%;
+    left: 225%;
+}
+
+#laptop .hover-text {
+    bottom: 30%; 
+    left: 230%;
+}
+.icon-circle:hover .hover-text {
+    display: block; 
+}
+
+.overlay {
+    position: absolute;
+    top: 35%; 
+    left: 32%;
+    width: 100%; 
+    height: 100%; 
+    color: white; 
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    padding: 20px; 
+    border-radius: 10px;  
+    font-weight:bold;
+    color: #A0522D;  
+    z-index: 2; 
+    justify-content: center;
+    flex-direction: column;
+}
+.anime {
+    opacity: 0; 
+    transform: translateY(20px); 
+    animation: fadeIn 0.5s forwards; 
+}
+
+
+@keyframes fadeIn {
+    to {
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+.anime:nth-child(1) { animation-delay: 0.5s; }
+.anime:nth-child(2) { animation-delay: 1.0s; }
+.anime:nth-child(3) { animation-delay: 1.5s; }
+.anime:nth-child(4) { animation-delay: 2s; }
+.anime a {
+    margin: 0 10px; 
+    font-size: 24px; 
+}
+
+h1 {
+    font-size: 100px; 
+    margin-bottom:52px; 
+    text-align: left; 
+    margin-left:8px;
+
+    line-height: 74px;
+    font-weight: bolder;
+}
+p {
+    font-size: 20px; 
+    margin-bottom: 25px; 
+    text-align: left; 
+    margin-left:10px;
+    margin-right: 12px;
+    line-height: 1px;
+}
+.hello{
+    line-height: 6px;
+    text-align: left; 
+    margin-left:14px;
+    margin-right: 14px;
+    font-size: 40px;
+}
+.social-icons {
+    display: flex;
+    gap: 15px; 
+    margin-left: 20px; 
+    margin-right: 20px;
+}
+.social-icons a {
+    color: #A0522D; 
+    font-size: 24px; 
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: rotateX(20deg) scale(2.1); 
+}
+
+
+.icon-circle {
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%;
+    border: 1px solid white; 
+    background-color: #A0522D; 
+    color: white;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    transition: background-color 0.3s; 
+    text-decoration: none; 
+    opacity: 0; 
+    animation: fadeIn 0.5s forwards; 
+    position: relative;
+    cursor: pointer;
+}
+
+.icon-circle i {
+    font-size: 18px;
+}
+.icon-circle p {
+    position: relative;
+    margin: 15%;
+}
+.pexel{
+    width: 1300px;
+    height: 100vh;
+}
+.icon-circle:hover{
+    color: #A0522D;
+    text-decoration: none;
+    background-color: white;
+}
+
+            .sidebaricon {
+                display: flex;
+                flex-direction: column;
+                position: fixed;
+                gap: 20px;
+                top: 30%;
+            }
+            @keyframes fadeIn {
+                to {
+                    opacity: 1; 
+                }
+            }            
+        
+            .aboutMeBoxx {
+                position: static; /* Keep it fixed relative to the viewport */
+                top: 90%; /* Set its vertical position */
+                left: 50%; /* Center it horizontally */
+                transform: translate(-50%, -50%); /* Center the element */
+                width: 100%; /* Make it responsive */
+                max-width: 1850px; /* Max width for larger screens */
+                padding: 20px; /* Padding for visual appeal */
+            }           
+                 
+            .sempe {
+              position: relative;  
+              left: 350px;  
+              bottom: 20px; 
+            }
+            
+            .sempe img {
+                width: 320px;                         /* Image takes full width of its container */
+                height: auto;
+                height: 260px;
+border: 15px solid lavender;
+                display: block;                      /* Ensure there's no space below the image */
+            }
+            
+            
+  .holdInfo {
+    width: 50%; 
+    height: auto; 
+    height: 30px;
+    text-align: center; 
+    position: absolute; 
+    bottom:90%; 
+    left: 67%; 
+    transform: translate(-50%, -50%);
+    color: rgb(80, 73, 73);
+    
+}
+
+a{
+    color: tomato;
+    text-decoration: none;
+
+}
+a:hover{
+    text-decoration: none;
+    color: tomato;
+}
+
+.resumeLink {
+        width: 10%;                     /* Converted from 180px to a percentage for responsiveness */
+        height: auto;                  /* Changed from fixed height to auto to adjust based on content */
+        background-color: #A0522D;  
+        display: block;               
+        margin: 0 auto;              
+        position: absolute;          
+        top: 69%;                    /* Kept as is, percentage based */
+        left: 47%;                   /* Adjusted to 50% for center alignment */
+        transform: translate(-50%, -50%); 
+        color: white;                
+        text-align: center;         
+        padding: 15px;              
+        font-size: 2vw;              /* Changed to vw for better scaling */
+        transition: background-color 0.3s ease; 
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+
+.resumeLink:hover{
+    background-color: #722a0b;
+}
+.resume{
+    color: #FFFFF0;
+}
+.resume:hover{
+    color: #FFFFF0 ;
+}
+.aboutMeBoxxx {
+    height: 450px; 
+    background-color: white; 
+    margin: 20px ; 
+    width: 85%;
+    max-width: 1850px; 
+    position: relative; 
+    top: 40%;
+    left: 9%;
+    font-family: 'Dancing Script', cursive;
+        pointer-events: auto; 
+    
+} 
+
+.sempee {
+    position: relative;  
+    left: 330px;  
+    top: 60px; 
+  }
+  
+  .sempee img {
+      width: 20.5%;                        
+      height: 290px;
+border: 15px solid lavender;
+      display: block;                  
+  }
+  
+.holdInfoo {
+width: 50%;
+height: auto; 
+height: 30px;
+text-align: center; 
+position: absolute; 
+bottom:82%; 
+left: 67%; 
+transform: translate(-50%, -50%);
+color: rgb(80, 73, 73);
+
+
+}
+h6{
+    font-size: 19px;
+}
+
+.connectLink{
+    position: absolute;
+    left: 5%;
+    top: 43.7%;
+}
+
+
+.resumeLinkk:hover{
+background-color: #722a0b;
+}
+.resumee{
+color: #FFFFF0;
+}
+.resumee:hover{
+color: #FFFFF0 ;
+}
+
+.new-box {
+    position: absolute; /* Or use absolute depending on your needs */
+    top: 150vh; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1900px; /* Example conversion */
+
+    height: 2000px;
+    background-color: #f0eeec;
+   
+
+}
+.experience-container {
+    position: absolute;
+    top: 4%; 
+    left: 35%;
+    width: 100%; 
+    height: 100%; 
+    color: white; 
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    padding: 20px; 
+    border-radius: 10px;  
+    color: #A0522D;  
+    z-index: 2; 
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.experience-container p{
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+.experience-container h4{
+    margin-right: 70%;
+
+  font-size: 20px;
+   
+}
+.resume-container{
+    font-size: 60px;
+    margin-top: 2px;
+   margin-left: 10%;
+}
+
+.line{
+    
+    width: 0.2%;
+    z-index: 1;
+    height: 15%;
+    margin-left: 4.2%;
+    background-color: #A0522D;
+}
+
+  
+    
+
+.icon-circlee {
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%;
+    border: 1px solid white; 
+    background-color: #A0522D; 
+    color: white;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+ margin-left: 3%;
+    text-decoration: none; 
+  
+    position: relative;
+}
+.current-job{
+    position: absolute;
+    top: 10%; 
+    right: 69%;
+    color: white; 
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    padding: 20px; 
+    border-radius: 10px;  
+    font-weight:bold;
+    color: #A0522D;  
+    z-index: 2; 
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+}
+.current-job h2{
+    margin-right: 50%;
+    margin-top: 2%;
+    font-size: 25px;
+    font-weight:bold;
+}
+.current-job h4{
+    margin-left: 8%;
+    width: 30%;
+}
+.semicolon{
+    position: absolute;
+bottom: 86%;
+left: 7%;
+cursor: pointer;
+font-weight: bold;
+
+}
+.semicolon a{
+    color: #A0522D;
+}
+
+.opensource{
+    position: absolute;
+    top: 27.2%; 
+    right: 68%;
+    color: white; 
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    padding: 20px; 
+    border-radius: 10px;  
+    font-weight:bold;
+    color: #A0522D;  
+    z-index: 2; 
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+}
+.opensource h2{
+    margin-right: 50%;
+    margin-top: 2%;
+    font-size: 25px;
+    font-weight:bold;
+}
+.opensource h4{
+    margin-left: 18%;
+    width: 30%;
+}
+.gssoc{
+position: absolute;
+bottom: 68.8%;
+left: 7%;
+cursor: pointer;
+font-weight: bolder;
+
+}
+.gssoc a{
+    color: #A0522D;
+}.experience-list {
+    margin-left: 5.7%;
+    margin-top: -43%;
+    }
+
+.experience-list ul {
+    list-style-type: none; /* Remove default bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+.experience-list li {
+    margin: 0; /* No margin between list items */
+    padding: 0; /* No padding to keep bullets close */
+    text-indent: 0; /* No indent to ensure block alignment */
+    display: flex; /* Use flexbox for better control */
+    align-items: baseline; /* Align bullets and text nicely */
+    width: 100%; /* Ensure full width of the parent */
+}
+
+.experience-list li::before {
+    content: "•"; /* Custom bullet */
+    color: #A0522D; /* Bullet color */
+    font-size: 1.2em; /* Bullet size */
+    margin-right: 5px; /* Space between bullet and text */
+    flex-shrink: 0; /* Prevent bullet from shrinking */
+}
+
+.gssoc-experience {
+    margin-left: 5.6%;
+    margin-top: 4.8%;
+   
+}
+
+.gssoc-experience ul {
+    list-style-type: none; /* Remove default bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+.gssoc-experience li {
+    margin: 0; /* No margin between list items */
+    padding: 0; /* No padding to keep bullets close */
+    text-indent: 0; /* No indent to ensure block alignment */
+    display: flex; /* Use flexbox for better control */
+    align-items: baseline; /* Align bullets and text nicely */
+    width: 100%; /* Ensure full width of the parent */
+}
+
+.gssoc-experience li::before {
+    content: "•"; 
+    color: #A0522D;
+    font-size: 1.2em;
+    margin-right: 5px; 
+    flex-shrink: 0; /* Prevent bullet from shrinking */
+}
+
+.maesdining{
+    position: absolute;
+    top: 44.5%; 
+    right: 70%;
+    color: white; 
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    padding: 20px; 
+    border-radius: 10px;  
+    font-weight:bold;
+    color: #A0522D;  
+    z-index: 2; 
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+}
+.maesdining h2{
+    margin-right: 34%;
+    margin-top: 1.8%;
+    font-size: 25px;
+    font-weight:bold;
+}
+.maesdining h4{
+    margin-left: 17%;
+    width: 30%;
+}
+.maes{
+    position: absolute;
+bottom: 51.5%;
+left: 7%;
+cursor: pointer;
+font-weight: bolder;
+}
+.maes a{
+    color: #A0522D;
+}
+
+.maes-experience {
+    margin-left: 5.6%;
+    margin-top: 1.6%;
+   
+}
+.maes-experience ul {
+    list-style-type: none; /* Removes default bullets */
+    padding: 0; /* Removes padding */
+    margin: 0; /* Removes margin */
+}
+
+.maes-experience li {
+    margin: 0; /* No margin between list items */
+    padding: 0; /* No padding to keep bullets close */
+    text-indent: 0; /* No indent to ensure block alignment */
+    display: flex; /* Use flexbox for better control */
+    align-items: baseline; /* Align bullets and text nicely */
+    width: 100%; /* Ensure full width of the parent */
+}
+
+.maes-experience li::before {
+    content: "•"; /* Custom bullet */
+    color: #A0522D; /* Bullet color */
+    font-size: 1em; /* Bullet size */
+    margin-right: 5px; /* Space between bullet and text */
+    flex-shrink: 0;
+}
+.linee{
+    
+    width: 0.2%;
+    z-index: 1;
+    height: 6%;
+    margin-left: 4.2%;
+    background-color: #A0522D;
+}
+h4{
+    margin-right: 70%;
+    margin-top: 2%;
+  font-size: 20px;
+   
+}
+.michael{
+    position: absolute;
+    top: 56.4%; 
+    right:80%;
+    color: white; 
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    padding: 20px; 
+    border-radius: 10px;  
+    font-weight:bold;
+    color: #A0522D;  
+    z-index: 2; 
+    justify-content: center;
+    flex-direction: column;
+    width: 56%;
+    
+}
+.michael h2{
+    font-weight: bold;
+    font-size: 25px;
+}
+.michael h4{
+    margin-left: 13%;
+    width: 74%;
+  
+}
+.university{
+    position: absolute;
+bottom: 40.8%;
+left: 7%;
+cursor: pointer;
+font-weight: bolder;
+
+}
+.university a{
+    color: #A0522D;
+}
+
+.education-experience {
+    margin-left: 5.5%; /* Adjusts the right margin */
+    margin-top: -16%; /* Adjusts the top margin */
+}
+
+.education-experience ul {
+    list-style-type: none; /* Removes default bullets */
+    padding: 0; /* Removes padding */
+    margin: 0; /* Removes margin */
+}
+
+.education-experience li {
+    margin: 0; /* No margin between list items */
+    padding: 0; /* No padding to keep bullets close */
+    text-indent: 0; /* No indent to ensure block alignment */
+    display: flex; /* Use flexbox for better control */
+    align-items: baseline; /* Align bullets and text nicely */
+    width: 100%; /* Ensure full width of the parent */
+}
+
+.education-experience li::before {
+    content: "•"; /* Custom bullet */
+    color: #A0522D; /* Bullet color */
+    font-size: 1em; /* Bullet size */
+    margin-right: 5px; /* Space between bullet and text */
+    vertical-align: middle; /* Align bullet with text */
+}
+.henley{
+    position: absolute;
+bottom: 26.1%;
+left: 6.4%;
+cursor: pointer;
+width: 20%;
+font-weight: bolder;
+}
+.henley a{
+    color: #A0522D;
+}
+.semicolonTeaching{
+    position: absolute;
+    top: 70.5%; 
+    right: 66%;
+    color: white; 
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    padding: 20px; 
+    border-radius: 10px;  
+    font-weight:bold;
+    color: #A0522D;  
+    z-index: 2; 
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+      font-weight: bolder;
+}
+.semicolonTeaching h2{
+    margin-right: 50%;
+    margin-top: 1%;
+    font-size: 25px;
+    font-weight:bold;
+}
+.semicolonTeaching h4{
+    margin-left: 7%;
+    width: 30%;
+}
+
+
+.criticalThinking{
+    position: absolute;
+    top: 79%; 
+    right: 61%;
+    color: white; 
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    padding: 20px; 
+    border-radius: 10px;  
+    font-weight:bold;
+    color: #A0522D;  
+    z-index: 2; 
+    justify-content: center;
+    flex-direction: column;
+    width: 69%;
+}
+.criticalThinking h2{
+    margin-right: 50%;
+    margin-bottom: 1%;
+    font-size: 25px;
+    font-weight:bold;
+}
+.criticalThinking h4{
+    margin-left: 18%;
+    width: 30%;
+}
+.semicolonC{
+
+    position: absolute;
+    top: 79.9%;
+    left: 6.9%;
+    font-weight: bolder;
+}
+.semicolonC a{
+    color: #A0522D;
+}
+.critical-experience {
+    margin-left: 5.5%; /* Adjusts the right margin */
+    margin-top: -6.3%; /* Adjusts the top margin */
+}
+
+.critical-experience ul {
+    list-style-type: none; /* Removes default bullets */
+    padding: 0; /* Removes padding */
+    margin: 0; /* Removes margin */
+}
+
+.critical-experience li {
+    margin: 0; /* No margin between list items */
+    padding: 0; /* No padding to keep bullets close */
+    text-indent: 0; /* No indent to ensure block alignment */
+    display: flex; /* Use flexbox for better control */
+    align-items: baseline; /* Align bullets and text nicely */
+    width: 100%; /* Ensure full width of the parent */
+}
+
+.critical-experience li::before {
+    content: "•"; /* Custom bullet */
+    color: #A0522D; /* Bullet color */
+    font-size: 1em; /* Bullet size */
+    margin-right: 5px; /* Space between bullet and text */
+    vertical-align: middle; /* Align bullet with text */
+}
+.tool-box {
+    position: absolute; /* Or use absolute depending on your needs */
+    top: 150vh; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1900px;
+    height: 1035px;
+    background-color: #f0eeec;
+
+}
+.toolsbox{
+    font-size: 60px;
+    margin-top: 30%;
+   margin-left: 44%;
+   font-family: cursive;  
+    color: #A0522D;
+    font-weight: bold;
+}
+.html{
+    height:60%;
+    width:50%;
+     margin-left: 20%;
+}
+.whitebox{
+    height: 10%;
+    width: 8%;
+    border-radius: 7%;
+    margin-left: -19%;
+    background-color: white;
+}
+.whitebox h6{
+    font-size: 18px;
+    margin-left: 25%;
+    color: #A0522D;
+}
+.whitebox1{
+    height: 10%;
+    width: 8%;
+    border-radius: 7%;
+    margin-left:-9%;
+    margin-top: -11.1%;
+    background-color: white;
+}
+.whitebox1 h6{
+    font-size: 18px;
+    margin-left: 25%;
+    color: #A0522D;
+}
+    .whitebox2{
+        height: 10%;
+        width: 8%;
+        margin-left:1%;
+        border-radius: 7%;
+        margin-top: -11.1%;
+        background-color: white;
+    }
+    .whitebox2 h6{
+     font-size: 17px;   
+     
+     margin-bottom: 5%;
+    }
+    .whitebox3{
+        height: 10%;
+        width: 8%;
+        border-radius: 7%;
+        margin-left:11%;
+        margin-top: -10.9%;
+        background-color: white;
+    }  
+    .whitebox3 h6{
+        font-size: 16px;   
+    }
+    .whitebox4{
+        height: 10%;
+        border-radius: 7%;
+        width: 8%;
+        margin-left:21%;
+        margin-top: -10.9%;
+        background-color: white;
+    }
+    .whitebox4 h6{
+        font-size: 18px;
+        margin-left: 16%;
+        color: #A0522D;
+    }
+    .whitebox5{
+        height: 10%;
+        width: 8%;
+        margin-left:31%;
+        margin-top: -11.5%;
+        border-radius: 7%;
+        background-color: white;
+    }
+    .whitebox5 h6{
+        font-size: 18px;
+        margin-left: 25%;
+        color: #A0522D;
+    }
+    .whitebox6{
+        height: 10%;
+        width: 8%;
+        margin-left:41%;
+        margin-top: -11.3%;
+        border-radius: 7%;
+        background-color: white;
+    }
+    .whitebox6 h6{
+        font-size: 18px;
+        margin-left: 13%;
+        color: #A0522D;
+    }
+    .whitebox7{
+        height: 10%;
+        width: 8%;
+        margin-left:51%;
+        margin-top: -11.3%;
+        background-color: white;
+        border-radius: 7%;
+    }
+    .whitebox7 h6{
+        font-size: 18px;
+        margin-left: 19%;
+        color: #A0522D;
+    }
+    .whitebox8{
+        height: 10%;
+        width: 8%;
+        margin-left:-19%;
+        margin-top: 3%;
+        background-color: white;
+        border-radius: 7%;
+    }
+    .whitebox8 h6{
+        font-size: 18px;
+        margin-left: 9%;
+        color: #A0522D;
+    }
+    .whitebox9{
+        height: 10%;
+        width: 8%;
+        margin-left:-9%;
+        margin-top: -11.2%;
+        background-color: white;
+        border-radius: 7%;
+    }
+
+    .whitebox9 h6{
+        font-size: 18px;
+        margin-left: 23%;
+        color: #A0522D;
+    }
+    .whitebox10{
+        height: 10%;
+        width: 8%;
+        margin-left:1.2%;
+        margin-top: -11.2%;
+        background-color: white;
+        border-radius: 7%;
+    }
+    .whitebox10 h6{
+        font-size: 18px;
+        margin-left: 10%;
+        color: #A0522D;
+    }
+    .whitebox11{
+        height: 10%;
+        width: 8%;
+        margin-left:11.2%;
+        margin-top: -11.2%;
+        background-color: white;
+        border-radius: 7%;
+    }
+    .whitebox11 h6{
+        font-size: 18px;
+        margin-left: 10%;
+        color: #A0522D;
+    }
+    .whitebox12{
+        height: 10%;
+        width: 8%;
+        margin-left:21.2%;
+        margin-top: -11.2%;
+        background-color: white;
+        border-radius: 7%;
+    }
+    .whitebox12 h6{
+        font-size: 18px;
+        margin-left: 10%;
+        color: #A0522D;
+    }
+    .whitebox13{
+        height: 10%;
+        width: 8%;
+        margin-left:31.2%;
+        margin-top: -11.2%;
+        background-color: white;
+        border-radius: 7%;
+    }
+    .whitebox13 h6{
+        font-size: 18px;
+        margin-left: 10%;
+        color: #A0522D;
+    }
+    .whitebox14{
+        height: 10%;
+        width: 8%;
+        margin-left:41.2%;
+        margin-top: -11.2%;
+        background-color: white;
+        border-radius: 7%;
+    }
+    .whitebox14 h6{
+        font-size: 18px;
+        margin-left: 10%;
+        color: #A0522D;
+    }
+    .whitebox15{
+        height: 10%;
+        width: 8%;
+        margin-left:51%;
+        margin-top: -11.2%;
+        background-color: white;
+        border-radius: 7%;
+    }
+    .whitebox15 h6{
+        font-size: 18px;
+        margin-left: 10%;
+        color: #A0522D;
+    }
+    .whitebox16{
+        height: 10%;
+        width: 8%;
+        margin-left:-19%;
+        margin-top: 2%;
+        background-color: white;
+        border-radius: 7%;
+    }
+    .whitebox16 h6{
+        font-size: 18px;
+        margin-left: 30%;
+        color: #A0522D;
+    }
+    .whitebox17{
+        height: 10%;
+        width: 8%;
+        margin-left:-9%;
+        margin-top: -11.2%;   background-color: white;
+        border-radius: 7%;
+    }
+    .whitebox17 h6{
+        font-size: 18px;
+        margin-left: 10%;
+        color: #A0522D;
+    }
+    .whitebox18{
+        height: 14%;
+        width: 9%;
+        margin-left:1%;
+        margin-top: -11%;background-color: white;
+        border-radius: 7%;
+    }
+    .whitebox18 h6{
+        font-size: 15px;
+        margin-left: 10%;
+        color: #A0522D;
+    }
+
+    .portfolio-container{
+        width: 1900px;
+        height: 1700px;
+        background-color: white;
+        position: absolute;
+        top: 1030px;
+     
+    }
+    .contact-container{
+        width: 1900px;
+        height: 1700px;
+        background-color:#A0522D;
+        position: absolute; 
+        top: 4090px;
+    }
+    .portfolio-heading{
+        font-size: 50px;
+        color: rgb(128, 30, 30);
+        text-align: center;
+        margin-top: 20px;
+        font-family: cursive;
+        font-weight: bolder;
+    }
