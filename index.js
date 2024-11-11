@@ -17,4 +17,4 @@ function switchTo(sectionClass){
         element.scrollIntoView({behavior:'smooth'});
     }
 }
-  
+

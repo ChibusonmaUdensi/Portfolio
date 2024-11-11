@@ -1092,8 +1092,8 @@ font-weight: bolder;
         height: 700px;
         background-color:#A0522D;
        top: 4090px;
-       display: flex;
-   
+       
+      
     }
     .portfolio-heading{
         font-size: 50px;
@@ -1104,11 +1104,22 @@ font-weight: bolder;
         font-weight: bolder;
     }
   .contact-us{
-
+    font-size: 50px;
+    color: white;
     font-family: cursive;
   }
-  .messsage-box{
-    line-height: 100px;
-    margin-top: 10px;
-    margin-left: 900px;
+  .form-control::placeholder {
+    color: white; 
+    opacity: 1; 
+}
+.form-control {
+    background-color: #A0522D; 
+    color: white;
   }
+  .form-control:focus {
+    border-color: white; 
+    outline: none; 
+    box-shadow: none;
+    background-color: #A0522D;
+    color: white; 
+}
