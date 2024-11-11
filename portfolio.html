@@ -28,7 +28,22 @@
         <div class="icon-circle" id="laptop" onclick="switchTo('.portfolio-container')"><i class="fas fa-laptop"></i> <span class="hover-text">Portfolio</span>  </div>
        
         <div class="icon-circle" id="envelope" onClick="switchTo('.contact-container')"><i class="fas fa-envelope"> </i><span class="hover-text">Contact</span>  </div>
-         </div>          
+         </div>  
+         <div class="audio-container">
+           <audio id="myAudio" style="display: none;" controls  loop > 
+            <source src="Hear The Bells - John Patitucci (1).mp3" type="audio/mpeg">
+           </audio>  
+           <div class="music-icon" id="musicIcon">
+           <img src="./images/music.png" class="music-off">
+           <img src="./images/musical-note.png" class="music-on">
+        
+           </div>
+           <div class="toggle-box" onclick="toggleMute()" > <span class="hover-text-music">Play Music</span><span class="hoverr-text-music">Pause Music</span> 
+             <i class="fas fa-toggle-off" 
+            style="font-size: 20px;" id="toggle-off" ></i>
+             <i class="fas fa-toggle-on"  style="font-size: 20px;" id="toggle-on"></i></div> 
+          
+    </div>
     </div>
 
     <div class="section overlay">    
@@ -40,7 +55,7 @@
         <div class="social-icons" >
             <div class="anime">
             <a href="https://www.linkedin.com/in/mercy-chibusonma-udensi-892b911b1/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="https://x.com/maesdining" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://x.com/chibusonma_" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
             <a href="https://github.com/ChibusonmaUdensi" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
             <a href="mailto:maesdining@gmail.com" target="_blank" aria-label="Gmail"><i class="fas fa-envelope"></i></a>
         </div>
@@ -249,7 +264,7 @@
                             </div>
                             <div class="whitebox7">
                                 <img class="html" src="./images/react.png">
-                                <h6> React</h6>
+                                <h6> React/React Native</h6>
                                 </div>
                                 <div class="whitebox8">
                                     <img class="html" src="./images/download (3).png">
@@ -323,20 +338,40 @@
                 </div>
                 <div class="form-group col-md-6" >
                    
-                    <textarea class="form-control"  id="message" rows="4" placeholder="Message" required></textarea>
-                    <button type="submit" class="btn btn-primary" style="background-color: white; height:50px; width:100%; color:#A0522D; border-color: white; margin-top: 2%">Send a message</button>
+                    <textarea class="form-control" style="height: 180px;"  id="message" rows="4" placeholder="Message" required></textarea>
+                    <button type="submit" class="btn btn-primary" style="background-color: white; height:55px; width:100%; color:#A0522D; border-color: white; margin-top: 2%">Send a message</button>
           
                 </div>
             </form>
         </div>
       
         <div class="message-box" style="line-height: 200px;">
+            <h2>Get In Touch</h2>
             <h6>
-                As a Frontend Engineer, I am dedicated to delivering high-quality, user-centered websites and web applications. I focus on creating intuitive user interfaces thatnot only captivate users but also enhance functionality. <br>By merging design principles with technical skills, I translate complex requirements into seamless, engaging digital experiences. I am committed to utilizing the latest technologies to ensure optimal performance and accessibility in every project. <br>I will personally review your message within 24 hours to understand your specific needs and provide a customized solution. Thank you for considering my services; I look forward to collaborating and bringing your vision to life.
-            </h6>
-        </div>
+                I am a Frontend Engineer dedicated to delivering high-quality, user-<br>centered applications. I focus on creating intuitive user interfaces <br>that not only captivate users but also enhance functionality. <br></h6>
+                <h6> By merging design principles with technical skills, I translate complex <br>requirements into seamless, engaging digital experiences. <br>I'll respond within 24 hours to discuss your needs and offer a tailored<br> solution. <br>Thank you for considering my services; I look forward to collaborating!</h6>
+                <i class="fa-solid fa-location-dot" style="transform: translateY(-75px);"></i> 
+                <p class="lagos">Lagos, Nigeria</p>
+                <i class="fa-solid fa-mobile-screen-button" style="transform: translateY(-95px);"></i>
+             
+                <a href="https://wa.link/zvhr8g" class="whatsapp"  target="_blank" > +(234)-704-884-0550</a>
+                <!-- <i class="fa-solid fa-envelope" style="transform: translateY(-68px);"></i> -->
+                <!-- <a href="mailto:maesdining@gmail.com" class="mail-to"  target="_blank" >sheroudensi@gmail.com</a> -->
+                <div class="contact-icons" >
+                    <a href="https://www.linkedin.com/in/mercy-chibusonma-udensi-892b911b1/" target="_blank" style="color: white;" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://x.com/chibusonma_" target="_blank" style="color: white;" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://github.com/ChibusonmaUdensi" target="_blank" style="color: white;" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    
+            <a href="mailto:maesdining@gmail.com" target="_blank" style="color: white;"aria-label="Gmail"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
         
     </div>
+    <div class="footer">
+        <p>All rights reserved &copy; 2024</p>
+        <p>Built by <span class="builder-name">Udensi Chibusonma</span></p>
+    </div>
+    
  
   </div>
   </div> 

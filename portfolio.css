@@ -931,8 +931,8 @@ font-weight: bolder;
         border-radius: 7%;
     }
     .whitebox7 h6{
-        font-size: 18px;
-        margin-left: 19%;
+        font-size: 14px;
+        margin-left: 3%;
         color: #A0522D;
     }
     .whitebox8{
@@ -1097,7 +1097,7 @@ font-weight: bolder;
     }
     .portfolio-heading{
         font-size: 50px;
-        color: rgb(128, 30, 30);
+        color:#A0522D;
         text-align: center;
         margin-top: 20px;
         font-family: cursive;
@@ -1122,4 +1122,198 @@ font-weight: bolder;
     box-shadow: none;
     background-color: #A0522D;
     color: white; 
+}
+.message-box{
+    position: absolute;
+    top: 85px;
+    left: 53%;
+    font-family: cursive;
+    color: white;
+  
+}
+.message-box h2{
+    line-height: 50px;
+}
+.message-box h6{
+    line-height: 30px;
+}
+.lagos{
+    margin-top: -28%;
+    margin-left: 4.5%;
+}
+.whatsapp {
+    margin-left: 1%;
+    position: absolute;
+    top: 48%;
+    color: white;
+}
+.whatsapp:hover{
+    color: white;
+}
+.fa-location-dot{
+    margin-left: 0.5%;
+}
+.fa-mobile-screen-button{
+    margin-left: 0.5%;
+}
+
+
+
+.contact-icons{
+    position: absolute;
+    top: 66%;
+    font-size: 30px;
+    color: white;
+}
+.footer {
+    background-color: rgb(43, 38, 38);
+    color: white; 
+    text-align: center;
+    padding: 20px; 
+    font-family: Arial, sans-serif; 
+   position: absolute;
+    top: 237%; 
+    width: 100%; 
+    max-width: 2200px;
+    left: 2%;
+    height: 80px;
+    
+}
+.footer p{
+    margin-left: 43%;
+margin-top: 0.5%;
+font-size: 14px;
+font-family: cursive;
+}
+.builder-name{
+    color:#A0522D;
+}
+
+.toggle-box {
+
+    background-color: #A0522D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    position: relative;
+    right:5%; 
+    top: 1550%  
+    
+}
+.toggle-box:hover {
+    background-color: #A0522D; /* Darker shade on hover */
+}
+#toggle-on{
+    display: none;
+    
+}
+.audio-container{
+    width: 30px;
+    height:50px;
+    background-color:#A0522D;
+    left: 100px;
+}
+.toggle-box:hover .hover-text{
+    display: block;
+}
+.toggle-box .hover-text{
+    display: none;
+    position: absolute;
+    left: 280%;
+
+    
+}
+.music-icon{
+ 
+    background-color: #A0522D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    position: relative;
+    right:1%; 
+    top: 19%  ;
+}
+.music-off{
+    width: 32px;
+}
+.music-on{
+    width: 30px;
+}
+.music-icon{
+    background-color: #A0522D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    right:5%; 
+    top: 1540%;
+      
+}
+.music-on{
+    filter: invert(1) brightness(2) contrast(10);
+    height: auto; 
+    transition: filter 0.3s ease; 
+    display: none;
+    width: 25px;
+    
+}
+.music-off{
+    filter: invert(1) brightness(2) contrast(10);
+    height: auto;
+    transition: filter 0.3s ease; 
+    width: 25px;
+}
+.hover-text-music {
+    display: none; 
+    position: absolute; 
+    left: 200%; 
+    transform: translateX(-50%); 
+    background-color: #da987c; 
+    color: white;
+    padding: 5px;
+    border-radius: 4px; 
+    font-size: 10px; 
+    white-space: nowrap; 
+    text-transform: none;
+}
+
+.toggle-box:hover .hover-text-music{
+    display: block;
+}
+.toggle-box .hover-text-music{
+    display: none;
+    position: absolute;
+    left: 280%;
+
+    
+}
+
+.hoverr-text-music {
+    display: none; 
+    position: absolute; 
+    left: 200%; 
+    transform: translateX(-50%); 
+    background-color: #da987c; 
+    color: white;
+    padding: 5px;
+    border-radius: 4px; 
+    font-size: 10px; 
+    white-space: nowrap; 
+    text-transform: none;
+}
+
+.toggle-box:hover .hoverr-text-music{
+    display: none;
+}
+.toggle-box .hoverr-text-music{
+    display: none;
+    position: absolute;
+    left: 300%;
+
+    
 }
