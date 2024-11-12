@@ -278,8 +278,8 @@ a:hover{
         display: block;               
         margin: 0 auto;              
         position: absolute;          
-        top: 69%;                   
-        left: 47%;                   
+        top: 72%;                   
+        left: 50%;                   
         transform: translate(-50%, -50%); 
         color: white;                
         text-align: center;         
@@ -328,13 +328,13 @@ border: 15px solid lavender;
   }
   
 .holdInfoo {
-width: 50%;
+width: 37%;
 height: auto; 
 height: 30px;
 text-align: center; 
 position: absolute; 
-bottom:82%; 
-left: 67%; 
+bottom:87%; 
+left: 63%; 
 transform: translate(-50%, -50%);
 color: rgb(80, 73, 73);
 
