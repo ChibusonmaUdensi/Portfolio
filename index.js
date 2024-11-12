@@ -19,8 +19,7 @@ function switchTo(sectionClass){
 }
 let isMuted = true;
 function toggleMute(){
-    isMuted = !isMuted;
-
+   
 
     const playMusic = document.querySelector('.hover-text-music');
     const pauseMusic = document.querySelector('.hoverr-text-music')
@@ -37,9 +36,7 @@ function toggleMute(){
         playMusic.style.display = 'block';
         pauseMusic.style.display = 'none';
         audio.pause()
-        setTimeout(() =>{
-            playMusic.style.display = 'none';
-        }, 1000);
+       
         }
       else {
         toggleOnIcon.style.display = 'inline';
@@ -50,8 +47,56 @@ function toggleMute(){
         playMusic.style.display = 'none';
         pauseMusic.style.display = 'block';
     }
-    setTimeout(() =>{
-        pauseMusic.style.display = 'none';
-    }, 1000);
-
 }
+
+const toggleBox = document.querySelector('.toggle-box');
+
+toggleBox.addEventListener('mouseleave', function () {
+    const pauseMusic = document.getElementsByClassName('hoverr-text-music')[0]; 
+    const playMusic = document.getElementsByClassName('hover-text-music')[0];
+    if (playMusic) {
+        playMusic.style.display = 'none'; 
+    }
+    if (pauseMusic) {
+        pauseMusic.style.display = 'none'; 
+    }
+});
+toggleBox.addEventListener('mouseenter', function() {
+    const pauseMusic = document.getElementsByClassName('hoverr-text-music')[0]; 
+    if (pauseMusic && !isMuted) {
+        pauseMusic.style.display = 'block'; 
+    }
+})
+
+const option1 = document.querySelector('.button1');
+const option2 = document.querySelector('.button2');
+const popup = document.getElementsByClassName('sectionpop')[0];
+const audio = document.getElementById('myAudio'); // Reference to the audio element
+
+function userChoice(option){
+    if (option === 'option1'){
+        popup.style.display = 'none';
+    }
+    
+    if (option === 'option2'){
+        isMuted = false;
+        audio.play();
+        toggleMute();
+        popup.style.display = 'none';
+        
+    }
+}
+option1.addEventListener('click', () => userChoice('option1'));
+option2.addEventListener('click', () => userChoice('option2'));
+const toggleOnIcon = document.querySelector('#toggle-on');
+const toggleOffIcon = document.querySelector('#toggle-off');
+
+toggleOnIcon.addEventListener('click', () => {
+    isMuted = true; // Set to unmuted
+    toggleMute(); // Update UI and audio state
+});
+
+toggleOffIcon.addEventListener('click', () => {
+    isMuted = false; // Set to muted
+    toggleMute(); // Update UI and audio state
+});
